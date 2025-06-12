@@ -218,7 +218,7 @@ class PaymentPlansHelper
      *
      * @return int
      */
-    private function getEnabledDefaultValue(FeePlan $feePlan, array $feePlanConfig = null) : int
+    private function getEnabledDefaultValue(FeePlan $feePlan, ?array $feePlanConfig = null) : int
     {
         $key = PaymentPlanConfig::keyForFeePlan($feePlan);
         $defaultEnabled = 0;
